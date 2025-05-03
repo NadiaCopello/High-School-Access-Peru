@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_49c55ed165fad31bc5b066e5f07aeaaf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_49c55ed165fad31bc5b066e5f07aeaaf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_49c55ed165fad31bc5b066e5f07aeaaf = L.map(
+                "map_49c55ed165fad31bc5b066e5f07aeaaf",
+                {
+                    center: [-12.782868459999994, -74.94484354],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fa8cbab061ecb2d89738d1223f47a988 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fa8cbab061ecb2d89738d1223f47a988.addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var marker_cdd06d6da215122049e65e206e8b218f = L.marker(
+                [-12.782868459999994, -74.94484354],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_d7c01bebe47b9b0b2ee1b40282a51d4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_461fff7e280f2524c012f92c49bb9667 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2476967ffa2fbc85b7b53096fa8d013c = $(`<div id="html_2476967ffa2fbc85b7b53096fa8d013c" style="width: 100.0%; height: 100.0%;">Primaria centroide</div>`)[0];
+                popup_461fff7e280f2524c012f92c49bb9667.setContent(html_2476967ffa2fbc85b7b53096fa8d013c);
+            
+        
+
+        marker_cdd06d6da215122049e65e206e8b218f.bindPopup(popup_461fff7e280f2524c012f92c49bb9667)
+        ;
+
+        
+    
+    
+                marker_cdd06d6da215122049e65e206e8b218f.setIcon(icon_d7c01bebe47b9b0b2ee1b40282a51d4e);
+            
+    
+            var circle_1f814d9a0a20bb7e4fd1f10745264010 = L.circle(
+                [-12.782868459999994, -74.94484354],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var marker_b7aeba05971caef5debfd1e132494113 = L.marker(
+                [-12.753424999999998, -74.922645],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_70048cff9689f15123208b0c1a7fd460 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2939df4cf05ba629ffdcb1643b48eda = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e6441514343199cf6d6426c5d6f90d5 = $(`<div id="html_0e6441514343199cf6d6426c5d6f90d5" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_c2939df4cf05ba629ffdcb1643b48eda.setContent(html_0e6441514343199cf6d6426c5d6f90d5);
+            
+        
+
+        marker_b7aeba05971caef5debfd1e132494113.bindPopup(popup_c2939df4cf05ba629ffdcb1643b48eda)
+        ;
+
+        
+    
+    
+                marker_b7aeba05971caef5debfd1e132494113.setIcon(icon_70048cff9689f15123208b0c1a7fd460);
+            
+    
+            var marker_a0987a58954b0217b8f8f8ae8a63fe1d = L.marker(
+                [-12.786205250000007, -74.97223711],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_d27a32b5e2127a1455e845aaf76e91d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45b9602a61a5ead09e5eb21b91fbe383 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0e69a04fdb2f0516283c77a32d3a9b4 = $(`<div id="html_d0e69a04fdb2f0516283c77a32d3a9b4" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_45b9602a61a5ead09e5eb21b91fbe383.setContent(html_d0e69a04fdb2f0516283c77a32d3a9b4);
+            
+        
+
+        marker_a0987a58954b0217b8f8f8ae8a63fe1d.bindPopup(popup_45b9602a61a5ead09e5eb21b91fbe383)
+        ;
+
+        
+    
+    
+                marker_a0987a58954b0217b8f8f8ae8a63fe1d.setIcon(icon_d27a32b5e2127a1455e845aaf76e91d1);
+            
+    
+            var marker_e26280b1798363aebbc60c3d919b6823 = L.marker(
+                [-12.786315610000008, -74.97407297],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_2a6308d98ed9562a8fc94061fcf63be4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a06e6c8ecad1704a6e6d92b95a9ba6ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b983db1e42dfae84aaaf5c43fbe2083f = $(`<div id="html_b983db1e42dfae84aaaf5c43fbe2083f" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_a06e6c8ecad1704a6e6d92b95a9ba6ca.setContent(html_b983db1e42dfae84aaaf5c43fbe2083f);
+            
+        
+
+        marker_e26280b1798363aebbc60c3d919b6823.bindPopup(popup_a06e6c8ecad1704a6e6d92b95a9ba6ca)
+        ;
+
+        
+    
+    
+                marker_e26280b1798363aebbc60c3d919b6823.setIcon(icon_2a6308d98ed9562a8fc94061fcf63be4);
+            
+    
+            var marker_51d49881430d1d57da9496480e90336d = L.marker(
+                [-12.783669999999999, -74.97206],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_cdaf311079c004499670a70fa20795ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9312a9dbe36cff9360addb52e95ba75f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fafe2affe61ba6cb92b7404eaab3b9c = $(`<div id="html_1fafe2affe61ba6cb92b7404eaab3b9c" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_9312a9dbe36cff9360addb52e95ba75f.setContent(html_1fafe2affe61ba6cb92b7404eaab3b9c);
+            
+        
+
+        marker_51d49881430d1d57da9496480e90336d.bindPopup(popup_9312a9dbe36cff9360addb52e95ba75f)
+        ;
+
+        
+    
+    
+                marker_51d49881430d1d57da9496480e90336d.setIcon(icon_cdaf311079c004499670a70fa20795ae);
+            
+    
+            var marker_6314c42b16c218845486241867ecfcc1 = L.marker(
+                [-12.785961630000005, -74.97523069],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_d5a8ed1629fb00d3d6195f31b26068eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8cf201bfe49e7cb4633798abe0e018bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_109c01db8c6ce1428e54b89a783fbf0a = $(`<div id="html_109c01db8c6ce1428e54b89a783fbf0a" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_8cf201bfe49e7cb4633798abe0e018bf.setContent(html_109c01db8c6ce1428e54b89a783fbf0a);
+            
+        
+
+        marker_6314c42b16c218845486241867ecfcc1.bindPopup(popup_8cf201bfe49e7cb4633798abe0e018bf)
+        ;
+
+        
+    
+    
+                marker_6314c42b16c218845486241867ecfcc1.setIcon(icon_d5a8ed1629fb00d3d6195f31b26068eb);
+            
+    
+            var marker_f0ba98a9e514296957df66cd4776edba = L.marker(
+                [-12.788552819999994, -74.97609896],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_29ee60691eedbe0a4ae6273d44734d8c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c56036760cfe77206e22b48fc5547e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32d6344dca7aedaa8e3bccd920d05a40 = $(`<div id="html_32d6344dca7aedaa8e3bccd920d05a40" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_0c56036760cfe77206e22b48fc5547e8.setContent(html_32d6344dca7aedaa8e3bccd920d05a40);
+            
+        
+
+        marker_f0ba98a9e514296957df66cd4776edba.bindPopup(popup_0c56036760cfe77206e22b48fc5547e8)
+        ;
+
+        
+    
+    
+                marker_f0ba98a9e514296957df66cd4776edba.setIcon(icon_29ee60691eedbe0a4ae6273d44734d8c);
+            
+    
+            var marker_1dec5c1dbb8eac41d31fa1cde058011e = L.marker(
+                [-12.784540000000005, -74.97382],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_36648f4352e60fe0e2f53d86bc1f4649 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9115e528a194524690a0f31654e2f1e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa4f46112c4d0594d7895532fef6befb = $(`<div id="html_aa4f46112c4d0594d7895532fef6befb" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_9115e528a194524690a0f31654e2f1e9.setContent(html_aa4f46112c4d0594d7895532fef6befb);
+            
+        
+
+        marker_1dec5c1dbb8eac41d31fa1cde058011e.bindPopup(popup_9115e528a194524690a0f31654e2f1e9)
+        ;
+
+        
+    
+    
+                marker_1dec5c1dbb8eac41d31fa1cde058011e.setIcon(icon_36648f4352e60fe0e2f53d86bc1f4649);
+            
+    
+            var marker_48e95875def07b289e03aa1c2f0ac717 = L.marker(
+                [-12.78597, -74.97525],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_e69a4eb5583f2b37bf8adb46dff773f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ec0a758aa1b3ba7ab7eeecc41c9eccf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc4320c1b9ae9423a8feea55c8fd8fdf = $(`<div id="html_cc4320c1b9ae9423a8feea55c8fd8fdf" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_8ec0a758aa1b3ba7ab7eeecc41c9eccf.setContent(html_cc4320c1b9ae9423a8feea55c8fd8fdf);
+            
+        
+
+        marker_48e95875def07b289e03aa1c2f0ac717.bindPopup(popup_8ec0a758aa1b3ba7ab7eeecc41c9eccf)
+        ;
+
+        
+    
+    
+                marker_48e95875def07b289e03aa1c2f0ac717.setIcon(icon_e69a4eb5583f2b37bf8adb46dff773f9);
+            
+    
+            var marker_e49cf4b9aae4563c55f9e1ed8357fb41 = L.marker(
+                [-12.78816, -74.97544],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_f374ca6ea074619b5f14e53f334046a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e45865c75328e6e5a6e622603792cf65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16c00f8884f59d724b6ff88ed08f9867 = $(`<div id="html_16c00f8884f59d724b6ff88ed08f9867" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_e45865c75328e6e5a6e622603792cf65.setContent(html_16c00f8884f59d724b6ff88ed08f9867);
+            
+        
+
+        marker_e49cf4b9aae4563c55f9e1ed8357fb41.bindPopup(popup_e45865c75328e6e5a6e622603792cf65)
+        ;
+
+        
+    
+    
+                marker_e49cf4b9aae4563c55f9e1ed8357fb41.setIcon(icon_f374ca6ea074619b5f14e53f334046a5);
+            
+    
+            var marker_f4c930ef1c72f6a1e0e58811a57c90b2 = L.marker(
+                [-12.783033599999994, -74.96904634],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_9ee1dedc3bac48e8b63045998270f6b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4bd7205c20509dbe41d83433d78525e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e62fe392f8a49b5e88d40c2a95da888b = $(`<div id="html_e62fe392f8a49b5e88d40c2a95da888b" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_4bd7205c20509dbe41d83433d78525e0.setContent(html_e62fe392f8a49b5e88d40c2a95da888b);
+            
+        
+
+        marker_f4c930ef1c72f6a1e0e58811a57c90b2.bindPopup(popup_4bd7205c20509dbe41d83433d78525e0)
+        ;
+
+        
+    
+    
+                marker_f4c930ef1c72f6a1e0e58811a57c90b2.setIcon(icon_9ee1dedc3bac48e8b63045998270f6b8);
+            
+    
+            var marker_f6370f108f7c540ff08a7bcad44d0e28 = L.marker(
+                [-12.788038519999994, -74.9747441],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_39c33d1e0a42defc7c1b87f06f2926b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_056de9de30c6d9a2aef2a28cbdac770a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4bf90772b099cb3ceca23fef26d25b2 = $(`<div id="html_e4bf90772b099cb3ceca23fef26d25b2" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_056de9de30c6d9a2aef2a28cbdac770a.setContent(html_e4bf90772b099cb3ceca23fef26d25b2);
+            
+        
+
+        marker_f6370f108f7c540ff08a7bcad44d0e28.bindPopup(popup_056de9de30c6d9a2aef2a28cbdac770a)
+        ;
+
+        
+    
+    
+                marker_f6370f108f7c540ff08a7bcad44d0e28.setIcon(icon_39c33d1e0a42defc7c1b87f06f2926b5);
+            
+    
+            var marker_04298a151b1e87e76385576b3baa60aa = L.marker(
+                [-12.809719999999993, -74.92502],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_4ac6411e1b0e3c474804a26c0228cba7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dad5177f2f5bb4f0e518e61038cfb948 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfb878d02926878fb68ba25eb2d30420 = $(`<div id="html_cfb878d02926878fb68ba25eb2d30420" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_dad5177f2f5bb4f0e518e61038cfb948.setContent(html_cfb878d02926878fb68ba25eb2d30420);
+            
+        
+
+        marker_04298a151b1e87e76385576b3baa60aa.bindPopup(popup_dad5177f2f5bb4f0e518e61038cfb948)
+        ;
+
+        
+    
+    
+                marker_04298a151b1e87e76385576b3baa60aa.setIcon(icon_4ac6411e1b0e3c474804a26c0228cba7);
+            
+    
+            var marker_c53f27759fa24584906aac4a34b8d3b5 = L.marker(
+                [-12.806259999999996, -74.93539],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_8e862a303cd153c7d9fb35863ed2e780 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68b92eee236ec0ff96e07aabf2311073 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_619b980b3112336219557208064daf56 = $(`<div id="html_619b980b3112336219557208064daf56" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_68b92eee236ec0ff96e07aabf2311073.setContent(html_619b980b3112336219557208064daf56);
+            
+        
+
+        marker_c53f27759fa24584906aac4a34b8d3b5.bindPopup(popup_68b92eee236ec0ff96e07aabf2311073)
+        ;
+
+        
+    
+    
+                marker_c53f27759fa24584906aac4a34b8d3b5.setIcon(icon_8e862a303cd153c7d9fb35863ed2e780);
+            
+    
+            var marker_b2cc25eb88194e749796aae294ad7c0e = L.marker(
+                [-12.783318120000006, -74.96895645],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_ff604286ba3ef5c379513db27345a630 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6912b6ce88d3eeaa33f215a18740e05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12174c59d0204f4f29fabac7e72b3346 = $(`<div id="html_12174c59d0204f4f29fabac7e72b3346" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_b6912b6ce88d3eeaa33f215a18740e05.setContent(html_12174c59d0204f4f29fabac7e72b3346);
+            
+        
+
+        marker_b2cc25eb88194e749796aae294ad7c0e.bindPopup(popup_b6912b6ce88d3eeaa33f215a18740e05)
+        ;
+
+        
+    
+    
+                marker_b2cc25eb88194e749796aae294ad7c0e.setIcon(icon_ff604286ba3ef5c379513db27345a630);
+            
+    
+            var marker_9585124d948f5424cfb003fe8c0835e2 = L.marker(
+                [-12.78818, -74.97502000000001],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_ef80bf2a2c41967575164198a9b764bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9edeaa9844306c287440bf46fe1c4c08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25ff524be5413cac9e3b71bd400c5983 = $(`<div id="html_25ff524be5413cac9e3b71bd400c5983" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_9edeaa9844306c287440bf46fe1c4c08.setContent(html_25ff524be5413cac9e3b71bd400c5983);
+            
+        
+
+        marker_9585124d948f5424cfb003fe8c0835e2.bindPopup(popup_9edeaa9844306c287440bf46fe1c4c08)
+        ;
+
+        
+    
+    
+                marker_9585124d948f5424cfb003fe8c0835e2.setIcon(icon_ef80bf2a2c41967575164198a9b764bd);
+            
+    
+            var marker_95407201cf862a7e4a9b1262bb849cfa = L.marker(
+                [-12.783588819999995, -74.96696431],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_1718d432847ab0ff16e6230217d12ddc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_249413fc063285c68e443c691f1859c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_899aebb9bc6c5098f34c259539cfcc47 = $(`<div id="html_899aebb9bc6c5098f34c259539cfcc47" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_249413fc063285c68e443c691f1859c6.setContent(html_899aebb9bc6c5098f34c259539cfcc47);
+            
+        
+
+        marker_95407201cf862a7e4a9b1262bb849cfa.bindPopup(popup_249413fc063285c68e443c691f1859c6)
+        ;
+
+        
+    
+    
+                marker_95407201cf862a7e4a9b1262bb849cfa.setIcon(icon_1718d432847ab0ff16e6230217d12ddc);
+            
+    
+            var marker_ced6f77c153b4a96956dfd36971bc90e = L.marker(
+                [-12.78353, -74.96077],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_9806cd995196e21ee2575dd752110bd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2bd913187f1905216ac3de66ad608eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a60e4871bdcadcda35ce01921aa460d5 = $(`<div id="html_a60e4871bdcadcda35ce01921aa460d5" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_f2bd913187f1905216ac3de66ad608eb.setContent(html_a60e4871bdcadcda35ce01921aa460d5);
+            
+        
+
+        marker_ced6f77c153b4a96956dfd36971bc90e.bindPopup(popup_f2bd913187f1905216ac3de66ad608eb)
+        ;
+
+        
+    
+    
+                marker_ced6f77c153b4a96956dfd36971bc90e.setIcon(icon_9806cd995196e21ee2575dd752110bd3);
+            
+    
+            var marker_649744592eb5c24a7cfd25a99cfee8ed = L.marker(
+                [-12.789365109999995, -74.97581177],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_7c1792a4d697af6d561752c1d20aab23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_317e262943f3ca710acd3aed45b4e119 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8b1482f43a0f33341d4ece87f8990f8 = $(`<div id="html_d8b1482f43a0f33341d4ece87f8990f8" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_317e262943f3ca710acd3aed45b4e119.setContent(html_d8b1482f43a0f33341d4ece87f8990f8);
+            
+        
+
+        marker_649744592eb5c24a7cfd25a99cfee8ed.bindPopup(popup_317e262943f3ca710acd3aed45b4e119)
+        ;
+
+        
+    
+    
+                marker_649744592eb5c24a7cfd25a99cfee8ed.setIcon(icon_7c1792a4d697af6d561752c1d20aab23);
+            
+    
+            var marker_54bee5aeffe9df47253f06d515343cc5 = L.marker(
+                [-12.785860000000005, -74.97772],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_5b449abc812b3960d200b9ada4960fcd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15c81f094166c050a16136fdb719e09a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6529da009a8603ed35d77979e55008c = $(`<div id="html_d6529da009a8603ed35d77979e55008c" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_15c81f094166c050a16136fdb719e09a.setContent(html_d6529da009a8603ed35d77979e55008c);
+            
+        
+
+        marker_54bee5aeffe9df47253f06d515343cc5.bindPopup(popup_15c81f094166c050a16136fdb719e09a)
+        ;
+
+        
+    
+    
+                marker_54bee5aeffe9df47253f06d515343cc5.setIcon(icon_5b449abc812b3960d200b9ada4960fcd);
+            
+    
+            var marker_2bd3f4e558d7358829f440d901323327 = L.marker(
+                [-12.785304999999997, -74.98446],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_ef8548a98a4a05e2d9f486327c25b32a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_439a6227871884bca63be4f675dc216f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_401f0135cd79c79daa4f51148c4b518b = $(`<div id="html_401f0135cd79c79daa4f51148c4b518b" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_439a6227871884bca63be4f675dc216f.setContent(html_401f0135cd79c79daa4f51148c4b518b);
+            
+        
+
+        marker_2bd3f4e558d7358829f440d901323327.bindPopup(popup_439a6227871884bca63be4f675dc216f)
+        ;
+
+        
+    
+    
+                marker_2bd3f4e558d7358829f440d901323327.setIcon(icon_ef8548a98a4a05e2d9f486327c25b32a);
+            
+    
+            var marker_d6865a69e2b2b2913f69a65ed3f426fa = L.marker(
+                [-12.780243319999999, -74.98973086],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_7ab461eca59a9134852d9bbbb934476f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_224ad8b567126e0e467fd1fa41f4d472 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a547ab3d84c1771fb6eb6b30e739a1a = $(`<div id="html_2a547ab3d84c1771fb6eb6b30e739a1a" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_224ad8b567126e0e467fd1fa41f4d472.setContent(html_2a547ab3d84c1771fb6eb6b30e739a1a);
+            
+        
+
+        marker_d6865a69e2b2b2913f69a65ed3f426fa.bindPopup(popup_224ad8b567126e0e467fd1fa41f4d472)
+        ;
+
+        
+    
+    
+                marker_d6865a69e2b2b2913f69a65ed3f426fa.setIcon(icon_7ab461eca59a9134852d9bbbb934476f);
+            
+    
+            var marker_52859e88682efc8e0666854bc00d8b91 = L.marker(
+                [-12.78561999999999, -74.98021],
+                {
+}
+            ).addTo(map_49c55ed165fad31bc5b066e5f07aeaaf);
+        
+    
+            var icon_5bd03800755521519634c8853d5ea47e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab969f15e0816407063d3249e9abed1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04ecaca2258b7156a6cbb906728ec9c6 = $(`<div id="html_04ecaca2258b7156a6cbb906728ec9c6" style="width: 100.0%; height: 100.0%;">Secundaria</div>`)[0];
+                popup_ab969f15e0816407063d3249e9abed1a.setContent(html_04ecaca2258b7156a6cbb906728ec9c6);
+            
+        
+
+        marker_52859e88682efc8e0666854bc00d8b91.bindPopup(popup_ab969f15e0816407063d3249e9abed1a)
+        ;
+
+        
+    
+    
+                marker_52859e88682efc8e0666854bc00d8b91.setIcon(icon_5bd03800755521519634c8853d5ea47e);
+            
+</script>
+</html>
